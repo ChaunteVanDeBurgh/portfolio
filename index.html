@@ -23,11 +23,18 @@
 		}
 
 		const whale = new Widget("Whale Translate", "./imgs/whale.png", "git", "live");
+		const meal = new Widget("Meal Plan", "./imgs/meal-plan.png", "https://github.com/ChaunteVanDeBurgh/mealplan", "https://chauntevandeburgh.github.io/mealplan/");
+		const essay = new Widget("Essay Analyzer", "./imgs/essay.jpeg", "git", "live");
+		const minesweeper = new Widget("MineSweeper", "./imgs/minesweeper.jpeg", "git", "live");
+		const calculator = new Widget("Calculator", "./imgs/calculater.png", "git", "live");
+		const element = new Widget("Element Use", "./imgs/elementuse.jpeg", "git", "live");
 
 		class Display extends React.Component {
 			render() {
 				return (
-					<h1>{whale.title}</h1>
+					<div>
+						<h1>{whale.title}</h1>
+					</div>
 				)
 			}
 		}
