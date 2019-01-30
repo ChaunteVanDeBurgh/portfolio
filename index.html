@@ -13,10 +13,21 @@
 	<div id="container"></div>
 	<script type="text/babel">
 
+		class Widget {
+			constructor(title, src, gitHub, liveDemo) {
+				this.title = title;
+				this.src = src;
+				this.gitHub = gitHub;
+				this.liveDemo = liveDemo;
+			}
+		}
+
+		const whale = new Widget("Whale Translate", "./imgs/whale.png", "git", "live");
+
 		class Display extends React.Component {
 			render() {
 				return (
-					<h1>Hello, World!</h1>
+					<h1>{whale.title}</h1>
 				)
 			}
 		}
